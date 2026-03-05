@@ -18,4 +18,4 @@ clean-targets:
 models:
   dbt_scooters:
     example:
-      +materialized: view
+      +materialized: table

@@ -1,0 +1,30 @@
+
+version: 2
+
+models:
+  - name: trips_stat_daily
+    description: "A starter dbt model"
+    columns:
+      - name: date
+        description: "The date for this record"
+      - name: trips
+        description: "The number of trips for this date"
+      - name: max_price_rub
+        description: "The maximum price for this date"
+      - name: avg_distance_km
+        description: "The average distance for this date"
+
+
+  - name: trips_stat
+    description: "A starter dbt model"
+    columns:
+      - name: trips
+        description: "The number of trips for this date"
+      - name: users
+        description: "The number of distinct users for this date"
+      - name: avg_duration_m
+        description: "The average duration of trips for this date"
+      - name: revenue_rub
+        description: "The total revenue for this date"
+      - name: free_trips_pct
+        description: "The percentage of free trips for this date"
