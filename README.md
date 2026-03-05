@@ -1,20 +1,47 @@
-<<<<<<< HEAD
 # dbt_scooters
-The project for improving DBT skills
-=======
-Welcome to your new dbt project!
 
-### Using the starter project
+This repository hosts the `dbt_scooters` project, a concise example dbt (data build tool) implementation focused on scooter telemetry data.
 
-Try running the following commands:
-- dbt run
-- dbt test
+## Project Details
 
+- **Name:** dbt_scooters
+- **Package manager:** `uv` (used for virtual environment and dependency management)
+- Standard dbt structure is followed, with models, macros, seeds, snapshots, and tests organized under their respective directories.
 
-### Resources:
-- Learn more about dbt [in the docs](https://docs.getdbt.com/docs/introduction)
-- Check out [Discourse](https://discourse.getdbt.com/) for commonly asked questions and answers
-- Join the [chat](https://community.getdbt.com/) on Slack for live discussions and support
-- Find [dbt events](https://events.getdbt.com) near you
-- Check out [the blog](https://blog.getdbt.com/) for the latest news on dbt's development and best practices
->>>>>>> 8017b72 (Initial project)
+## Quick Commands Cheat Sheet
+
+> Ensure you are in the project root and that your `uv` environment is activated before running dbt commands.
+
+### Environment setup (uv)
+```powershell
+uv venv create        # create virtual environment
+uv activate           # activate environment
+uv install            # install dependencies (including dbt)
+```
+
+### Initialization
+```powershell
+dbt deps              # download package dependencies
+```
+
+### Core workflows
+```powershell
+dbt compile           # compile models without running
+dbt run               # execute all models
+dbt test              # run tests defined in schema.yml
+dbt clean             # purge the target/ directory
+dbt debug             # check connection and configuration
+```
+
+### Advanced usage
+```powershell
+dbt ls                 # list resources
+dbt run --models <model>      # run specific model(s)
+dbt test --models <model>     # test specific model(s)
+dbt docs generate      # build documentation
+
+dbt docs serve         # serve docs locally
+```
+
+---
+
