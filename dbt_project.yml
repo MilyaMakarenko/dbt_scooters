@@ -14,17 +14,12 @@ models:
   dbt_scooters:
     +materialized: table
     +docs:
-        enabled: true
-    staging:
-      +docs:
-        node_color: "#f1f3f4"  # 
-    marts:
-      +docs:
-        node_color: "#e8f0fe"  # 
+      enabled: true
+      node_color: "#f1f3f4"  # 
+
+
+flags:        
   docs:
-    node_color: true
+    node_color: true  #
     +docs:
-      css: |
-        body { background: white; }
-        .graph-container { background: white; }
-        .node { stroke: #dadce0; }
+      css: "custom.css"  #

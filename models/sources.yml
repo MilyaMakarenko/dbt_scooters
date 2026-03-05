@@ -4,9 +4,17 @@ sources:
     schema: scooter_raw
     tables:
       - name: trips
+        meta:
+          docs:
+            node_color: "#f8f9fa"
+            node_outline: "#dadce0"
       - name: users
+        meta:
+          docs:
+            node_color: "#f8f9fa"
+            node_outline: "#dadce0"
       - name: events
-
-    +docs:
-      node_color: "#f8f9fa"
-      node_outline: "#dadce0"
+        meta:
+          docs:
+            node_color: "#f8f9fa"
+            node_outline: "#dadce0"
