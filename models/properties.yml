@@ -28,3 +28,11 @@ models:
         description: "The total revenue for this date"
       - name: free_trips_pct
         description: "The percentage of free trips for this date"
+
+  - name: trips_stat_age
+    description: "Ages of clients"
+    columns:
+      - name: age
+        description: "The age of the users for this date"
+      - name: avg_trips
+        description: "The average number of trips for this age group"
