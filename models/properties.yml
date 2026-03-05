@@ -36,3 +36,26 @@ models:
         description: "The age of the users for this date"
       - name: avg_trips
         description: "The average number of trips for this age group"
+
+  - name: trips_stat_daily_l2 
+    description: "Daily trip statistics with additional calculations"
+    columns:
+      - name: date
+        description: "The date for this record"
+      - name: trips
+        description: "The number of trips for this date"
+      - name: max_price_rub
+        description: "The maximum price for this date"
+      - name: avg_distance_km
+        description: "The average distance for this date"
+  - name: trips_stat_daily_l3
+    description: "Aggregated daily trip statistics"
+    columns:
+      - name: max_date
+        description: "The maximum date in the dataset"
+      - name: max_trips
+        description: "The maximum number of trips for any date"
+      - name: max_price_rub
+        description: "The maximum price across all dates"
+      - name: max_distance_km
+        description: "The maximum average distance across all dates"
