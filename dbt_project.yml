@@ -15,3 +15,16 @@ models:
     +materialized: table
     +docs:
         enabled: true
+    staging:
+      +docs:
+        node_color: "#f1f3f4"  # 
+    marts:
+      +docs:
+        node_color: "#e8f0fe"  # 
+  docs:
+    node_color: true
+    +docs:
+      css: |
+        body { background: white; }
+        .graph-container { background: white; }
+        .node { stroke: #dadce0; }
