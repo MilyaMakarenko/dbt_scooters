@@ -5,4 +5,4 @@ select
     trips,
      max_price_rub ,
     avg_distance_km 
-from trips_stat_daily
+from scooters_raw.trips_stat_daily

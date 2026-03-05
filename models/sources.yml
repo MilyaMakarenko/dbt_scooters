@@ -1,0 +1,8 @@
+sources:  # <- Это объект
+  - name: test_app  # <- А это элементы списка (так и должно быть!)
+    database: test_app
+    schema: scooter_raw
+    tables:
+      - name: trips
+      - name: users
+      - name: events

@@ -1,31 +1,17 @@
 name: 'dbt_scooters'
 version: '1.0.0'
-
 profile: 'dbt_scooters' #'profiles.yml' 
-
 model-paths: ["models"]
 analysis-paths: ["analyses"]
 test-paths: ["tests"]
 seed-paths: ["seeds"]
 macro-paths: ["macros"]
 snapshot-paths: ["snapshots"]
-
 clean-targets:         
   - "target"
   - "dbt_packages"
-
-sources:
-  - name: test_app  # Название источника
-    database: test_app  # Имя вашей базы с сырыми данными
-    schema: scooter_raw  # Схема, где лежат таблицы
-    tables:
-      - name: trips  # Таблица с поездками
-      - name: users  # Таблица с пользователями
-      - name: events  # Таблица с самокатами
-
 models:
   dbt_scooters:
     +materialized: table
-
     +docs:
-        enabled: true        # docs ВНУТРИ models
+        enabled: true
