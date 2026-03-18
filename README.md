@@ -45,3 +45,9 @@ dbt docs serve         # serve docs locally
 
 ---
 
+![photo_2026-03-05_18-29-21](https://github.com/user-attachments/assets/190d0845-8502-4588-b806-39fcef21be46) ![photo_2026-03-05_18-29-21 (2)](https://github.com/user-attachments/assets/904b8549-f760-4345-a530-228a7b4d452f)
+![photo_2026-03-05_18-29-21 (3)](https://github.com/user-attachments/assets/33a2f393-266d-4b2f-bb3d-01313ba53c2e) ![photo_2026-03-05_18-29-21 (4)](https://github.com/user-attachments/assets/27ca61a8-8f56-4368-9a6c-447aeba4a99c)
+
+
+
+
